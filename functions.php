@@ -46,8 +46,11 @@ function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
-}
 
+	wp_enqueue_style('devicon', 'https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css');
+
+	wp_enqueue_style('google_fonts', 'https://fonts.googleapis.com/css?family=Palanquin+Dark:600,700|EB+Garamond');
+}
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
 /* Add all our JavaScript files here.
 We'll let WordPress add them to our templates automatically instead
@@ -76,6 +79,22 @@ function hackeryou_scripts() {
   wp_enqueue_script(
     'scripts', //handle
     get_template_directory_uri() . '/js/main.min.js', //source
+    array( 'jquery', 'plugins', 'sticky', 'parallax' ), //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+  wp_enqueue_script(
+    'sticky', //handle
+    get_template_directory_uri() . '/js/jquery.sticky-kit.js', //source
+    array( 'jquery', 'plugins' ), //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+  wp_enqueue_script(
+    'parallax', //handle
+    get_template_directory_uri() . '/js/jquery.stellar.min.js', //source
     array( 'jquery', 'plugins' ), //dependencies
     null, // version number
     true //load in footer
@@ -275,4 +294,11 @@ function get_post_parent($post) {
 	else {
 		return $post->ID;
 	}
+}
+
+/* hackeryou_get_thumbnail_url: Return current post thumbnail URL */
+function hackeryou_get_thumbnail_url($post) {
+	$imageID = get_post_thumbnail_id($post->ID);
+	$imageURL = wp_get_attachment_url($imageID);
+	return $imageURL;
 }

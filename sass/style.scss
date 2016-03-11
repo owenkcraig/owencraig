@@ -7,35 +7,100 @@
 * Author URI: http://hackeryou.com
 */
 
+@import 'variables';
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'homepage';
+@import 'about';
+@import 'skills';
+@import 'portfolio';
+@import 'contact';
+
 /*
 ====================================
 Default Styling
 ====================================
 */
 
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	color: #333;
+}
+
 img {
 	max-width: 100%;
 }
 
-body {
-	color: #333;
+h1,h2,h3,h4 {
+	margin: 0;
+}
+
+h1 {
+	font-family: $headingFont;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.038rem;
+	font-size: 8rem;
+}
+
+h2 {
+	font-family: $headingFont;
+	font-weight: 600;
+	letter-spacing: 0.038rem;
+	font-size: 5rem;
+}
+
+h3 {
+	font-family: $headingFont;
+	font-weight: 600;
+	letter-spacing: 0.038rem;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-family: $headingFont;
+	font-weight: 600;
+	letter-spacing: 0.038rem;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: $mainFont;
+	letter-spacing: 0.01rem;
+	line-height: 1.5;
+}
+
+a {
+	color: $offWhite;
+		&:hover {
+			color: $accentIntense;
+		}
 }
 
 .container {
-	max-width: 1200px;
 	margin: 0 auto;
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	// float: left;
+	// width: 65%;
+	// margin-right: 5%;
+}
+
+.wrapper {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 72px 0 50px 0;
 }
 
 .full {

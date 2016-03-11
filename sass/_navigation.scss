@@ -1,14 +1,30 @@
-ul.menu {
-	margin: 0;
-	padding: 0;
-	li {
-		display: inline;
-		margin-right: 10px;
-		a {
-			color: #333;
-			padding: 10px;
-			background: #333;
-			color: white;
+#nav {
+	background-image: url(images/lodyas.png);
+	height: 80px;
+	display: flex;
+	align-items: center;
+	z-index: 150;
+	box-shadow: 0 2px 3px rgba (0,0,0,0.4);
+	border-bottom: 5px solid $accentIntense;
+	ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		list-style-type: none;
+		li {
+			margin-right: 10px;
+			a {
+				padding: 10px;
+				color: $offWhite;
+				font-family: $headingFont;
+				text-transform: uppercase;
+				font-size: 2rem;
+				&:hover {
+					color: $accentIntense;
+				}
+			}
 		}
 	}
 }

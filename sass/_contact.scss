@@ -1,0 +1,47 @@
+#contact {
+	background-size: cover;
+	h2 {
+		color: $offWhite;
+	}
+	p {
+		color: $offWhite;
+	}
+	.wpcf7-email, .wpcf7-text {
+		width: 500px;
+	}
+	.wpcf7-textarea {
+		width: 500px;
+		height: 200px;
+		resize: none;
+	}
+	.wpcf7-submit {
+		width: 200px;
+		background: none;
+		border: none;
+		border: 3px solid $accentIntense;
+		padding: 10px;
+		font-size: 2rem;
+		color: $offWhite;
+		text-transform: uppercase;
+		font-family: $headingFont;
+		font-weight: 700;
+		letter-spacing: 3px;
+		transition: all 0.5s ease-in-out;
+		&:hover {
+			color: $accentIntense;
+			border: 3px solid $offWhite;
+		}
+	}
+	.wpcf7-mail-sent-ok {
+		border: 2px solid $offWhite;
+		color: $offWhite;
+	}
+	.wpcf7-email, .wpcf7-text, .wpcf7-textarea {
+		background: rgba(255, 255, 255, 0.4);
+		border: none;
+		border-right: 3px solid $accentIntense;
+		border-bottom: 3px solid $accentIntense;
+		padding: 10px;
+	}
+	border-bottom: 3px solid $accentIntense;
+}

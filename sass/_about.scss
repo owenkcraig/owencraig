@@ -1,0 +1,34 @@
+#about {
+	background-color: $blueWhite;
+	p {
+		color: $offBlack;
+	}
+	h3 {
+		text-align: center;	
+	}
+	.aboutContent {
+		display: flex;
+		.aboutText {
+			flex: 1 0 70%;
+			.socialIcons {
+				display: flex;
+				justify-content: space-around;
+				i {
+					color: $offBlack;
+					font-size: 8rem;
+					transition: all 0.5s ease-in-out;
+					&:hover {
+						color: $accentIntense;
+					}
+				}
+			}
+		}
+		.aboutImage {
+			flex: 1 0 30%;
+			padding: 20px;
+			img {
+				border-radius: 25%;
+			}
+		}
+	}
+}

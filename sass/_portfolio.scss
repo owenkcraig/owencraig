@@ -1,0 +1,40 @@
+#portfolio {
+	.portfolioItem {
+		.portfolioItemDetails {
+			margin: 10px 0;
+			display: flex;
+			border-right: 3px solid $accentIntense;
+			border-bottom: 3px solid $accentIntense;
+			.portfolioImage {
+				flex: 1 0 35%;
+				img {
+					display: block;
+				}
+			}
+			.portfolioDescription {
+				flex: 1 0 65%;
+				background-image: url(images/lodyas.png);
+				color: $offWhite;
+				padding: 20px;
+				text-align: center;
+				h4 {
+					color: $accentIntense;
+				}
+				.viewSite {
+					text-transform: uppercase;
+					text-decoration: none;
+					border: 3px solid $accentIntense;
+					padding: 10px;
+					transition: all 0.5s ease-in-out;
+					&:hover {
+						color: $accentIntense;
+						border: 3px solid $offWhite;
+					}
+				}
+			}
+		}
+	}
+	a {
+		text-decoration: underline;
+	}
+}

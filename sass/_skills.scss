@@ -1,0 +1,30 @@
+#skills {
+	background-image: url(images/lodyas.png);
+	h2,p {
+		color: $offWhite;
+	}
+	.skillsContent {
+		.skillsSummary {
+			width: 100%;
+			color: $offWhite;
+			font-family: $mainFont;
+			padding-bottom: 20px;
+		}
+		.skillsGallery {
+			display: flex;
+			flex-wrap: wrap;
+			text-align: center;
+			.skillsEntry {
+				flex: 1 0 20%;
+				i {
+					font-size: 6rem;
+					color: $accentIntense;
+				}
+				p {
+					color: $accentIntense;
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+}

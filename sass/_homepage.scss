@@ -1,0 +1,31 @@
+#home {
+	height: 100vh;
+	position: relative;
+	background-size: cover;
+	.heroWrapper {
+		position: relative;
+		max-width: 1080px;
+		margin: 0 auto;
+		text-align: right; 
+		.heroWrapperContent {
+			position: relative;
+			bottom: 72px;
+			padding: 300px 20px 0 0;
+		}
+	}
+	h1 {
+		color: $accent;
+		text-shadow: 4px 2px 0 rgba(2,8,52,0.7);
+	}
+	.lastName {
+		color: $accentIntense;
+	}
+	h3 {
+		color: $darkBlue;
+	}
+	i {
+		font-size: 5rem;
+		color: $offWhite;
+		padding-top: 20px; 
+	}
+}
