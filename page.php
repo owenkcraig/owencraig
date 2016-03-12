@@ -67,6 +67,8 @@
           </div>
         </section>
 
+        <section class="divider" id="divider" style="background-image: url(<?php the_field('dividerImage'); ?>" data-stellar-background-ratio="0.25"></section>
+
         <section class="portfolio" id="portfolio">
           <div class="wrapper">
             <h2>Portfolio</h2>
@@ -90,7 +92,7 @@
                       <div class="portfolioDescription">
                         <h4><?php the_title(); ?></h4>
                         <p><?php the_content(); ?></p>
-                        <a href=" <?php the_sub_field('portfolio_URL') ?> " class="viewSite">View the Site</a>
+                        <a href=" <?php the_field('portfolio_url') ?> " class="viewSite" target="_blank">View the Site</a>
                       </div>
                     </div>
                   </div>

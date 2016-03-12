@@ -49,7 +49,7 @@ function hackeryou_styles(){
 
 	wp_enqueue_style('devicon', 'https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css');
 
-	wp_enqueue_style('google_fonts', 'https://fonts.googleapis.com/css?family=Palanquin+Dark:600,700|EB+Garamond');
+	wp_enqueue_style('google_fonts', 'https://fonts.googleapis.com/css?family=Palanquin+Dark:600,700|Martel+Sans');
 }
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
 /* Add all our JavaScript files here.

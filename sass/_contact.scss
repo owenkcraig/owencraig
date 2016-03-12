@@ -1,5 +1,7 @@
 #contact {
 	background-size: cover;
+	background-color: rgba(2,8,52,0.6);
+	background-blend-mode: darken;
 	h2 {
 		color: $offWhite;
 	}
@@ -18,7 +20,7 @@
 		width: 200px;
 		background: none;
 		border: none;
-		border: 3px solid $accentIntense;
+		border: 3px solid $accentPop;
 		padding: 10px;
 		font-size: 2rem;
 		color: $offWhite;
@@ -27,6 +29,7 @@
 		font-weight: 700;
 		letter-spacing: 3px;
 		transition: all 0.5s ease-in-out;
+		margin-top: 15px;
 		&:hover {
 			color: $accentIntense;
 			border: 3px solid $offWhite;
@@ -39,9 +42,9 @@
 	.wpcf7-email, .wpcf7-text, .wpcf7-textarea {
 		background: rgba(255, 255, 255, 0.4);
 		border: none;
-		border-right: 3px solid $accentIntense;
-		border-bottom: 3px solid $accentIntense;
+		border-right: 3px solid $accentPop;
+		border-bottom: 3px solid $accentPop;
 		padding: 10px;
+		margin-top: 5px;
 	}
-	border-bottom: 3px solid $accentIntense;
 }

@@ -22,10 +22,12 @@
 	}
 	h3 {
 		color: $darkBlue;
+		line-height: 24px;
 	}
 	i {
 		font-size: 5rem;
-		color: $offWhite;
-		padding-top: 20px; 
+		color: $accent;
+		text-shadow: 4px 2px 0 rgba(2,8,52,0.7);
+		padding-top: 26px; 
 	}
 }
