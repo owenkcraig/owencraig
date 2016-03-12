@@ -7,25 +7,37 @@
 	.aboutContent {
 		display: flex;
 		.aboutText {
-			flex: 1 0 70%;
+			flex: 1 0 72%;
 			.socialIcons {
 				display: flex;
-				justify-content: space-around;
-				i {
-					color: $offBlack;
-					font-size: 5rem;
-					transition: all 0.5s ease-in-out;
-					&:hover {
-						color: $accentPop;
+				justify-content: space-between;
+				.socialEntries {
+					display: flex;
+					.socialEntry {
+						padding-top: 5px;
+						padding-right: 30%;
+						i {
+							color: $offBlack;
+							font-size: 4rem;
+							transition: all 0.5s ease-in-out;
+							&:hover {
+								color: $accentPop;
+							}
+						}
 					}
 				}
 			}
 		}
 		.aboutImage {
-			flex: 1 0 30%;
+			flex: 1 0 28%;
 			padding: 20px;
-			img {
-				border-radius: 25%;
+			a {
+				color: $offBlack;
+				text-decoration: underline;
+				transition: 0.5s all ease-in-out;
+				&:hover {
+					color: $accentIntense;
+				}
 			}
 		}
 	}

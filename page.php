@@ -30,19 +30,22 @@
             <div class="aboutContent">
               <div class="aboutText">
                 <p><?php the_field('aboutText'); ?></p>
-                <h3>Get in touch:</h3>
                 <div class="socialIcons">
-                  <?php while( has_sub_field('socialGallery') ): ?>
-                    <div class="socialEntry">
-                      <a href=" <?php the_sub_field('social_url'); ?> " target="_blank">
-                        <?php the_sub_field('socialImage'); ?>
-                      </a> 
-                    </div>
-                  <?php endwhile; ?>
+                  <h3>Get in touch:</h3>
+                  <div class="socialEntries">
+                    <?php while( has_sub_field('socialGallery') ): ?>
+                      <div class="socialEntry">
+                        <a href=" <?php the_sub_field('social_url'); ?> " target="_blank">
+                          <?php the_sub_field('socialImage'); ?>
+                        </a> 
+                      </div>
+                    <?php endwhile; ?>
+                  </div>
                 </div>
               </div>
               <div class="aboutImage">
                 <img src="<?php the_field('aboutImage'); ?>" alt="">
+                <p><?php the_field('aboutImageCredit') ?></p>
               </div>
             </div>
           </div>
@@ -83,11 +86,10 @@
                 
             <?php if ( $portfolioPieces->have_posts() ); ?>
                 <?php while ($portfolioPieces->have_posts()) : $portfolioPieces->the_post(); ?>
+                  <?php $image = get_field('portfolioImage'); ?>
                   <div class="portfolioItem">
                     <div class="portfolioItemDetails">
-                      <div class="portfolioImage" >
-                        <?php $image = get_field('portfolioImage'); ?>
-                        <img src="<?php echo $image['sizes']['large'] ?>" alt="">
+                      <div class="portfolioImage" style="background-image: url(<?php echo $image['sizes']['large']; ?>">
                       </div>
                       <div class="portfolioDescription">
                         <h4><?php the_title(); ?></h4>

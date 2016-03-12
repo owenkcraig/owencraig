@@ -8,6 +8,9 @@
 			border-bottom: 4px solid $accentPop;
 			.portfolioImage {
 				flex: 1 0 35%;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
 				img {
 					display: block;
 				}
@@ -17,8 +20,7 @@
 				background-image: url(images/lodyas.png);
 				background-color: rgba(2,8,52,0.5);
 				background-blend-mode: darken;
-				padding: 20px;
-				text-align: center;
+				padding: 30px;
 				h4 {
 					color: $accentPop;
 				}
@@ -26,6 +28,8 @@
 					color: $offWhite;
 				}
 				.viewSite {
+					display: inline-block;
+					margin-top: 10px;
 					text-transform: lowercase;
 					text-decoration: none;
 					border: 3px solid $accentIntense;
@@ -41,5 +45,6 @@
 	}
 	a {
 		text-decoration: underline;
+		transition: 0.5s all ease-in-out;
 	}
 }
