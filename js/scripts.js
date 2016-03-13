@@ -1,6 +1,15 @@
 $(function() {
-	$("#nav").stick_in_parent();
 	
+
+	// Dropdown Nav on mobile
+	$('.fa-bars').click(function(){
+		$(this).next().slideToggle();
+	});
+
+	// Sticky nav
+	$("#nav").stick_in_parent();
+
+	// Parallax effect
 	$(window).stellar({
 		responsive: true
 	});

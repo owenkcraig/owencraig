@@ -2,7 +2,11 @@
 	background-image: url(images/lodyas.png);
 	background-color: rgba(2,8,52,0.5);
 	background-blend-mode: darken;
-	h2,p {
+	h2 {
+		color: accentPop;
+	}
+
+	p {
 		color: $offWhite;
 	}
 	.skillsContent {

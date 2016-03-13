@@ -1,21 +1,19 @@
 #about {
 	background-color: $offWhite;
 	h3 {
-		text-align: center;	
-		color: $offBlack;
+		color: $accentPop;
 	}
 	.aboutContent {
 		display: flex;
+		flex-wrap: wrap;
 		.aboutText {
 			flex: 1 0 72%;
 			.socialIcons {
-				display: flex;
-				justify-content: space-between;
 				.socialEntries {
 					display: flex;
 					.socialEntry {
 						padding-top: 5px;
-						padding-right: 30%;
+						padding-right: 10%;
 						i {
 							color: $offBlack;
 							font-size: 4rem;

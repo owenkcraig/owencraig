@@ -22,6 +22,13 @@
             'container' => false,
             'theme_location' => 'primary'
           )); ?>
+          <i class="fa fa-bars"></i>
+          <div class="showMobileNav">
+            <?php wp_nav_menu( array(
+              'container' => false,
+              'theme_location' => 'primary'
+            )); ?>
+          </div>
         </section>
 
         <section class="about" id="about">
