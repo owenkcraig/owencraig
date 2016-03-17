@@ -76,6 +76,7 @@ h4 {
 	letter-spacing: 0.038rem;
 	font-size: 2.5rem;
 	text-transform: uppercase;
+	line-height: 25px;
 }
 
 p {
@@ -87,7 +88,8 @@ p {
 
 a {
 	color: $offWhite;
-		&:hover {
+	transition: all 0.5s ease-in-out;
+		&:hover, &:focus {
 			color: $accentIntense;
 		}
 }
@@ -105,7 +107,7 @@ a {
 .wrapper {
 	max-width: 1080px;
 	margin: 0 auto;
-	padding: 50px;
+	padding: 60px 50px 50px 50px;
 }
 
 .full {

@@ -213,7 +213,7 @@ p.form-allowed-tags, .nocomments {
 }
 
 .comment-meta a {
-	&:active, &:hover {
+	&:active, &:hover, &:focus {
 		color: #ff4b33;
 	}
 }

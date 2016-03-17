@@ -32,11 +32,15 @@
         </section>
 
         <section class="about" id="about">
-          <div class="wrapper">
+          <div class="wrapper aboutWrapper">
+            <div class="mobileImage">
+              <img src="<?php the_field('aboutImageMobile'); ?>" alt="">
+            </div>
             <h2>About Me</h2>
             <div class="aboutContent">
               <div class="aboutText">
                 <p><?php the_field('aboutText'); ?></p>
+                <p><?php the_field('linkToPortfolio'); ?></p>
                 <div class="socialIcons">
                   <h3>Get in touch:</h3>
                   <div class="socialEntries">
@@ -50,11 +54,14 @@
                   </div>
                 </div>
               </div>
-              <div class="aboutImage">
-                <img src="<?php the_field('aboutImage'); ?>" alt="">
-                <p><?php the_field('aboutImageCredit') ?></p>
+              <div class="mediumImage">
+                <img src="<?php the_field('aboutImageMobile'); ?>" alt="">
               </div>
+              
             </div>
+          </div>
+          <div class="aboutImage">
+            <img src="<?php the_field('aboutImage'); ?>" alt="">
           </div>
         </section>
 
@@ -77,7 +84,7 @@
           </div>
         </section>
 
-        <section class="divider" id="divider" style="background-image: url(<?php the_field('dividerImage'); ?>" data-stellar-background-ratio="0.25"></section>
+        <section class="divider" id="divider" style="background-image: url(<?php the_field('dividerImage'); ?>)"></section>
 
         <section class="portfolio" id="portfolio">
           <div class="wrapper">
@@ -96,7 +103,7 @@
                   <?php $image = get_field('portfolioImage'); ?>
                   <div class="portfolioItem">
                     <div class="portfolioItemDetails">
-                      <div class="portfolioImage" style="background-image: url(<?php echo $image['sizes']['large']; ?>">
+                      <div class="portfolioImage" style="background-image: url(<?php echo $image['sizes']['large']; ?>)">
                       </div>
                       <div class="portfolioDescription">
                         <h4><?php the_title(); ?></h4>
@@ -110,10 +117,23 @@
           </div>
         </section>
 
-        <section class="contact" id="contact" style="background-image: url(<?php the_field('contactImage'); ?>" data-stellar-background-ratio="0.25">
+        <section class="contact" id="contact" style="background-image: url(<?php the_field('contactImage'); ?>)" data-stellar-background-ratio="0.25">
           <div class="wrapper">
             <h2>Contact</h2>
             <?php echo do_shortcode('[contact-form-7 id="9" title="Contact form"]') ?>
+            <div class="socialIcons">
+              <h3>On Social media:</h3>
+              <div class="socialEntries">
+                <?php while( has_sub_field('socialGallery') ): ?>
+                  <div class="socialEntry">
+                    <a href=" <?php the_sub_field('social_url'); ?> " target="_blank">
+                      <?php the_sub_field('socialImage'); ?>
+                    </a> 
+                  </div>
+                <?php endwhile; ?>
+              </div>
+            </div>
+            <p><?php the_field('contactEmail'); ?></p>
           </div>
         </section>
 

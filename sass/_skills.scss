@@ -1,5 +1,5 @@
 #skills {
-	background-image: url(images/lodyas.png);
+	background-image: url('images/lodyas.png');
 	background-color: rgba(2,8,52,0.5);
 	background-blend-mode: darken;
 	h2 {
@@ -27,8 +27,8 @@
 					color: $accentPop;
 				}
 				p {
-					color: $accent;
-					font-size: 2rem;
+					color: $accentIntense;
+					font-size: 1.7rem;
 				}
 			}
 		}

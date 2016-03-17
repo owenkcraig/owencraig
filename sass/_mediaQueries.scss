@@ -3,22 +3,24 @@
 // **************************
 
 // Landscape phone to portrait table-layout
-@media (max-width: 940px) {
 
+@media (max-width: 1233px) {
 	#about {
-		.aboutContent {
-			.aboutText {
-				flex: 1 0 100%;
-			}
-			.aboutImage {
-				flex: 1 0 100%;
-				text-align: center;
-				img {
-					height: 300px;
+		.aboutWrapper {
+			.aboutContent {
+				.mediumImage {
+					display: block;
 				}
-			}
+				
+			}	
+		}
+		.aboutImage {
+			display: none;
 		}
 	}
+}
+
+@media (max-width: 940px) {
 
 	#skills {
 		.skillsContent {
@@ -59,7 +61,25 @@
 		}
 	}
 
+	#about {
+		.aboutWrapper {
+				.mobileImage {
+					display: block;
+					flex: 1 0 100%;
+				}
+			.aboutContent {
+				.aboutText {
+					flex: 1 0 100%;
+				}
+				.mediumImage {
+					display: none;
+				}
+			}
+		}
+	}
+
 	#nav {
+		padding: 0;
 		.menu {
 			display: none;
 		}
@@ -91,13 +111,13 @@
 	
 	#contact {
 		.wpcf7-email, .wpcf7-text {
-			width: 300px;
+			width: 100%;
 		}
 		.wpcf7-textarea {
-			width: 300px;
+			width: 100%;
 		}
 		.wpcf7-submit {
-			width: 150px;
+			width: 100%;
 		}
 	}
 }
@@ -107,15 +127,17 @@
 	#home {
 		.heroWrapper {
 			padding: 20px;
+			text-align: center;
 		}
 		h1, .lastName {
 			font-size: 3.5rem;
 		}
 		h3 {
 			font-size: 1.5rem;
-			color: $accent;
+			// color: $offWhite;
 		}
 		i {
+			padding-top: 15px;
 			font-size: 2.5rem;
 		}
 	}
@@ -141,6 +163,11 @@
 
 	}
 
+	#divider {
+		background-size: initial;
+		background-attachment: scroll;
+	}
+
 	#portfolio {
 		.portfolioItem {
 			.portfolioItemDetails {
@@ -158,6 +185,11 @@
 
 //Portrait phones and down
 @media (max-width: 480px) {
+	body {
+		.wrapper {
+		padding: 95px 25px 25px 25px;
+		}
+	}
 	#about {
 		.aboutContent {
 			.aboutImage {
@@ -166,5 +198,8 @@
 				}
 			}
 		}
+	}
+	#contact {
+		background-color: transparent;
 	}
 }

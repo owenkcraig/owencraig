@@ -1,42 +1,66 @@
 #about {
 	background-color: $offWhite;
-	h3 {
-		color: $accentPop;
-	}
-	.aboutContent {
-		display: flex;
-		flex-wrap: wrap;
-		.aboutText {
-			flex: 1 0 72%;
-			.socialIcons {
-				.socialEntries {
-					display: flex;
-					.socialEntry {
-						padding-top: 5px;
-						padding-right: 10%;
-						i {
-							color: $offBlack;
-							font-size: 4rem;
-							transition: all 0.5s ease-in-out;
-							&:hover {
-								color: $accentPop;
+	display: flex;
+	.aboutWrapper {
+		flex: 1 0 60%;
+		.mobileImage {
+			display: none;
+			text-align: center;
+			img {
+				height: 200px;
+				border-radius: 50%;
+			}
+		}
+		h3 {
+			color: $accentPop;
+		}
+		.aboutContent {
+			display: flex;
+			flex-wrap: wrap;
+			.aboutText {
+				flex: 1 0 50%;
+				a {
+					color: $offBlack;
+					text-decoration: underline;
+					transition: 0.5s all ease-in-out;
+					&:hover, &:focus {
+						color: $accentIntense;
+					}
+				}
+				.socialIcons {
+					.socialEntries {
+						padding-top: 15px;
+						display: flex;
+						.socialEntry {
+							padding-right: 7%;
+							i {
+								color: $offBlack;
+								font-size: 4rem;
+								transition: all 0.5s ease-in-out;
+								&:hover, &:focus {
+									color: $accentPop;
+								}
 							}
 						}
 					}
 				}
 			}
-		}
-		.aboutImage {
-			flex: 1 0 28%;
-			padding: 20px;
-			a {
-				color: $offBlack;
-				text-decoration: underline;
-				transition: 0.5s all ease-in-out;
-				&:hover {
-					color: $accentIntense;
+			.mediumImage {
+				display: none;
+				flex: 1 0 50%;
+				padding-left: 50px;
+				img {
+					border-radius: 50%;
 				}
 			}
+		}
+	}
+	.aboutImage {
+		flex: 1 0 40%;
+		margin-bottom: -4px;
+		text-align: right;
+		img {
+			max-height: 600px;
 		}
 	}
 }

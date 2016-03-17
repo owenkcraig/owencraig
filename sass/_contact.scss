@@ -2,22 +2,23 @@
 	background-size: cover;
 	background-color: rgba(2,8,52,0.6);
 	background-blend-mode: darken;
-	h2 {
+	background-repeat: no-repeat;
+	h2, h3 {
 		color: $accentPop;
 	}
 	p {
 		color: $offWhite;
 	}
 	.wpcf7-email, .wpcf7-text {
-		width: 500px;
+		width: 70%;
 	}
 	.wpcf7-textarea {
-		width: 500px;
+		width: 70%;
 		height: 200px;
 		resize: none;
 	}
 	.wpcf7-submit {
-		width: 200px;
+		width: 400px;
 		background: none;
 		border: none;
 		border: 3px solid $accentPop;
@@ -30,7 +31,7 @@
 		letter-spacing: 3px;
 		transition: all 0.5s ease-in-out;
 		margin-top: 15px;
-		&:hover {
+		&:hover, &:focus {
 			color: $accentPop;
 			border: 3px solid $offWhite;
 		}
@@ -46,5 +47,26 @@
 		border-bottom: 3px solid $accentPop;
 		padding: 10px;
 		margin-top: 5px;
+	}
+	.socialIcons {
+		margin-top: 40px;
+		.socialEntries {
+			display: flex;
+			.socialEntry {
+				padding-top: 5px;
+				padding-right: 7%;
+				i {
+					color: $offWhite;
+					font-size: 4rem;
+					transition: all 0.5s ease-in-out;
+					&:hover, &:focus {
+						color: $accentPop;
+					}
+				}
+			}
+		}
+	}
+	a {
+		text-decoration: underline;
 	}
 }

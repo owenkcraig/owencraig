@@ -1,8 +1,9 @@
 #nav {
-	background-image: url(images/lodyas.png);
+	background-image: url('images/lodyas.png');
 	background-color: rgba(2,8,52,0.5);
 	background-blend-mode: darken;
 	height: 72px;
+	padding: 0 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -29,7 +30,7 @@
 				// outline: none;
 				// position: relative;
 				// display: inline-block;
-				&:hover {
+				&:hover, &:focus {
 					color: $accentPop;
 				}
 			}
@@ -51,7 +52,7 @@
 		z-index: 150;
 		box-shadow: 0 2px 3px rgba (0,0,0,0.4);
 		border-bottom: 4px solid $accentIntense;
-		width: 70%;
+		width: 100%;
 		text-align: center;
 		ul {
 			margin: 0;
@@ -72,7 +73,7 @@
 					// outline: none;
 					// position: relative;
 					// display: inline-block;
-					&:hover {
+					&:hover, &:focus {
 						color: $accentPop;
 					}
 				}

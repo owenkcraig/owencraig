@@ -1,7 +1,7 @@
 a {
 	color: #BA209B;
 	text-decoration: none;
-	&:hover {
+	&:hover, &:focus {
 		color: #D424B1;
 	}
 }

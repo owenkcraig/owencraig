@@ -1,8 +1,8 @@
 #portfolio {
 	background-color: $offWhite;
 	.portfolioItem {
+			margin: 20px 0 60px 0;
 		.portfolioItemDetails {
-			margin: 20px 0;
 			display: flex;
 			flex-wrap: wrap;
 			border-right: 4px solid $accentPop;
@@ -11,14 +11,13 @@
 				flex: 1 0 40%;
 				background-size: cover;
 				background-position: center;
-				background-repeat: no-repeat;
 			}
 			.portfolioDescription {
 				flex: 1 0 60%;
-				background-image: url(images/lodyas.png);
+				background-image: url('images/lodyas.png');
 				background-color: rgba(2,8,52,0.5);
 				background-blend-mode: darken;
-				padding: 30px;
+				padding: 25px 35px;
 				h4 {
 					color: $accentPop;
 				}
@@ -33,7 +32,7 @@
 					border: 3px solid $accentIntense;
 					padding: 10px;
 					transition: all 0.5s ease-in-out;
-					&:hover {
+					&:hover, &:focus {
 						color: $accentIntense;
 						border: 3px solid $offWhite;
 					}

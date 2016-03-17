@@ -29,5 +29,9 @@
 		color: $accent;
 		// text-shadow: 4px 2px 0 rgba(2,8,52,0.7);
 		padding-top: 26px; 
+		transition: 0.5s all ease-in-out;
+		&:hover, &:focus {
+			color: $accentPop;
+		}
 	}
 }
